@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+make
+rmmod dummy_pci_driver
+insmod dummy_pci_driver.ko
+dmesg|less
